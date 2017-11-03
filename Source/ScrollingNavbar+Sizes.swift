@@ -46,7 +46,7 @@ extension ScrollingNavigationController {
     guard let scrollView = scrollView() else {
       return CGSize.zero
     }
-    
+
     let verticalInset = scrollView.contentInset.top + scrollView.contentInset.bottom
     return CGSize(width: scrollView.contentSize.width, height: scrollView.contentSize.height + verticalInset)
   }
